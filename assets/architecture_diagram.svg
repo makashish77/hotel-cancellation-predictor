@@ -1,0 +1,78 @@
+<svg width="900" height="420" viewBox="0 0 900 420" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#555"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="420" fill="#ffffff"/>
+  <text x="450" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#222">
+    Hotel Booking Cancellation Predictor — Architecture
+  </text>
+
+  <!-- Data Source -->
+  <rect x="30" y="80" width="150" height="70" rx="10" fill="#E6F1FB" stroke="#378ADD" stroke-width="1.5"/>
+  <text x="105" y="108" text-anchor="middle" font-size="13" font-weight="bold" fill="#0C447C">Data Source</text>
+  <text x="105" y="126" text-anchor="middle" font-size="11" fill="#0C447C">Kaggle Hotel</text>
+  <text x="105" y="140" text-anchor="middle" font-size="11" fill="#0C447C">Booking Demand CSV</text>
+
+  <!-- Preprocessing -->
+  <rect x="230" y="80" width="160" height="70" rx="10" fill="#EEEDFE" stroke="#7F77DD" stroke-width="1.5"/>
+  <text x="310" y="105" text-anchor="middle" font-size="13" font-weight="bold" fill="#3C3489">Preprocessing</text>
+  <text x="310" y="123" text-anchor="middle" font-size="11" fill="#3C3489">data_preprocessing.py</text>
+  <text x="310" y="138" text-anchor="middle" font-size="11" fill="#3C3489">clean + engineer features</text>
+
+  <!-- Model Training -->
+  <rect x="440" y="80" width="160" height="70" rx="10" fill="#E1F5EE" stroke="#1D9E75" stroke-width="1.5"/>
+  <text x="520" y="105" text-anchor="middle" font-size="13" font-weight="bold" fill="#085041">Model Training</text>
+  <text x="520" y="123" text-anchor="middle" font-size="11" fill="#085041">train_model.py</text>
+  <text x="520" y="138" text-anchor="middle" font-size="11" fill="#085041">Gradient Boosting Classifier</text>
+
+  <!-- Colab -->
+  <rect x="440" y="190" width="160" height="60" rx="10" fill="#FAEEDA" stroke="#BA7517" stroke-width="1.5"/>
+  <text x="520" y="215" text-anchor="middle" font-size="13" font-weight="bold" fill="#633806">Google Colab</text>
+  <text x="520" y="233" text-anchor="middle" font-size="11" fill="#633806">EDA + experimentation</text>
+
+  <!-- Saved Model -->
+  <rect x="650" y="80" width="160" height="70" rx="10" fill="#FAECE7" stroke="#D85A30" stroke-width="1.5"/>
+  <text x="730" y="105" text-anchor="middle" font-size="13" font-weight="bold" fill="#712B13">Saved Model</text>
+  <text x="730" y="123" text-anchor="middle" font-size="11" fill="#712B13">models/cancellation_model.pkl</text>
+  <text x="730" y="138" text-anchor="middle" font-size="11" fill="#712B13">(joblib)</text>
+
+  <!-- Streamlit App -->
+  <rect x="440" y="300" width="160" height="70" rx="10" fill="#FBEAF0" stroke="#D4537E" stroke-width="1.5"/>
+  <text x="520" y="325" text-anchor="middle" font-size="13" font-weight="bold" fill="#72243E">Streamlit App</text>
+  <text x="520" y="343" text-anchor="middle" font-size="11" fill="#72243E">app.py</text>
+  <text x="520" y="358" text-anchor="middle" font-size="11" fill="#72243E">predict.py inference</text>
+
+  <!-- GitHub -->
+  <rect x="230" y="300" width="160" height="70" rx="10" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1.5"/>
+  <text x="310" y="325" text-anchor="middle" font-size="13" font-weight="bold" fill="#2C2C2A">GitHub Repo</text>
+  <text x="310" y="343" text-anchor="middle" font-size="11" fill="#2C2C2A">source code + docs</text>
+  <text x="310" y="358" text-anchor="middle" font-size="11" fill="#2C2C2A">version control</text>
+
+  <!-- End User -->
+  <rect x="650" y="300" width="160" height="70" rx="10" fill="#EAF3DE" stroke="#639922" stroke-width="1.5"/>
+  <text x="730" y="325" text-anchor="middle" font-size="13" font-weight="bold" fill="#27500A">Revenue Manager</text>
+  <text x="730" y="343" text-anchor="middle" font-size="11" fill="#27500A">(end user)</text>
+  <text x="730" y="358" text-anchor="middle" font-size="11" fill="#27500A">views risk predictions</text>
+
+  <!-- Arrows -->
+  <line x1="180" y1="115" x2="228" y2="115" stroke="#555" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="390" y1="115" x2="438" y2="115" stroke="#555" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="600" y1="115" x2="648" y2="115" stroke="#555" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <line x1="520" y1="150" x2="520" y2="188" stroke="#555" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="520" y1="252" x2="520" y2="298" stroke="#555" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <line x1="730" y1="150" x2="730" y2="298" stroke="#555" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M650 335 L602 335" stroke="#555" stroke-width="1.5" marker-end="url(#arrow)" fill="none"/>
+
+  <line x1="310" y1="300" x2="310" y2="160" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+  <line x1="310" y1="160" x2="230" y2="115" stroke="#888" stroke-width="1" stroke-dasharray="4 3" marker-end="url(#arrow)"/>
+  <text x="200" y="200" font-size="10" fill="#888">code pushed from repo</text>
+
+  <text x="450" y="405" text-anchor="middle" font-size="11" fill="#888">
+    Flow: Data → Preprocess → Train (in Colab) → Save model → Streamlit app (deployed from GitHub) → End user decisions
+  </text>
+</svg>
